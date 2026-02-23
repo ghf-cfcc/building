@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Input Types</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>JavaScript input types</h1>
+
+  <p id="outputPar"> inputs are displayed here</p>
+
+  <p>
+    <input oninput="doOnInput(this);" type="text" id="textInput">
+    <button onclick='showItem("textInput");''>text</button>
+  </p>
+
+  <p>
+    <input type="number" id="numberInput">
+    <button onclick=' showItem("numberInput");''>number</button>
+  </p>
+
+  <p>
+    <input type="password" id="passwordInput">
+    <button onclick='showItem("passwordInput");'>password</button>
+  </p>
+
+  <p>
+    <input type="email" id="emailInput">
+    <button onclick='showItem("emailInput");'>email</button>
+  </p>
+
+  <p>
+    <input type="tel" id="telInput">
+    <button onclick='showItem("telInput");'>tel</button>
+  </p>
+
+  <p>
+    <input type="date" id="dateInput">
+    <button onclick='showItem("dateInput");'>date</button>
+  </p>
+
+  <p>
+    <input type="time" id="timeInput">
+    <button onclick='showItem("timeInput");'>time</button>
+  </p>
+
+  <p>
+    <input type="url" id="urlInput">
+    <button onclick='showItem("urlInput");'>url</button>
+  </p>
+
+  <p>
+    <input type="color" id="colorInput">
+    <button onclick='showItem("colorInput");'>color</button>
+  </p>
+
+  <script type="text/javascript">
+
+    function showItem(itemName) {
+      let inputElement = document.getElementById(itemName);
+      let outputElement = document.getElementById("outputPar");
+      outputElement.textContent = itemName + " : " + inputElement.value;
+    }
+
+    function doOnInput(element){
+      console.log(input.value);
+    }
+  </script>
+</body>
+
+</html>
