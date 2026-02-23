@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Browser and Server</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<h1>&#129472; Browser and Server</h1>
+
+<body>
+
+  <p>Demo application that starts the game. </p>
+  <p>Play to find the cheese, or to avoid it.</p>
+  <p id="counterPar"></p>
+  <p id="buttonPar"> </p>
+
+  <script type="module">
+    import { doPlayGame } from "./client.mjs";
+    doPlayGame();
+
+  </script>
+</body>
+
+</html>
