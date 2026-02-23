@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">    
+<html>
+
+<head>
+    <title>Closures Demo</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <script>
+
+function outerFunc(){
+  let outerVar = "I'm a var in the outer function";
+  function innerFunc(){
+    console.log(outerVar);
+  }
+  return innerFunc;
+}
+
+function countUp(){
+    let count = 0;
+    function nextCount(){
+        count = count + 1;
+        return count;
+    }
+    return nextCount;
+}
+
+
+    </script>
+</body>
+
+</html>
